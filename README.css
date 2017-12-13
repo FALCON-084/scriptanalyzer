@@ -1,4 +1,9 @@
 .ui-slider-track.ui-corner-all,
+.ui-flipswitch.ui-corner-all,
+.ui-li-count {
+	-webkit-border-radius: .3125em;
+	border-radius: .3125em
+}
 .ui-page-theme-a .ui-slider-track .ui-btn-active,
 html .ui-bar-a .ui-slider-track .ui-btn-active,
 html .ui-body-a .ui-slider-track .ui-btn-active,
@@ -10,11 +15,20 @@ html body div.ui-slider-track.ui-body-a .ui-btn-active {
 	text-shadow: 0 1px 0 #059
 }
 .ui-hide-label .ui-rangeslider label,
+.ui-hidden-accessible {
+	position: absolute!important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px)
+}
 .ui-field-contain>.ui-rangeslider>label {
 		float: left;
 		width: 20%;
 		margin: .5em 2% 0 0
 	}
+	.ui-popup .ui-field-contain>label,
+	.ui-popup .ui-field-contain .ui-controlgroup-label,
 	.ui-popup .ui-field-contain>.ui-rangeslider>label {
 		float: none;
 		width: auto;
@@ -36,6 +50,7 @@ div.ui-slider:after {
 div.ui-slider:after {
 	clear: both
 }
+
 input.ui-slider-input {
 	display: block;
 	float: left;
@@ -58,7 +73,6 @@ input.ui-slider-input {
 	-moz-box-sizing: content-box;
 	box-sizing: content-box
 }
-
 .ui-slider-input::-webkit-outer-spin-button,
 .ui-slider-input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
@@ -83,6 +97,7 @@ input.ui-slider-input {
 .ui-slider-track .ui-slider-bg {
 	height: 100%
 }
+
 .ui-slider-track .ui-btn.ui-slider-handle {
 	position: absolute;
 	z-index: 1;
@@ -99,7 +114,6 @@ input.ui-slider-input {
 	width: 14px;
 	margin: -8px 0 0 -8px
 }
-
 select.ui-slider-switch {
 	position: absolute!important;
 	height: 1px;
@@ -125,12 +139,12 @@ div.ui-slider-switch.ui-mini {
 	height: 29px;
 	top: 0
 }
+
 .ui-slider-inneroffset {
 	margin: 0 16px;
 	position: relative;
 	z-index: 1
 }
-
 .ui-slider-switch.ui-mini .ui-slider-inneroffset {
 	margin: 0 15px 0 14px
 }
